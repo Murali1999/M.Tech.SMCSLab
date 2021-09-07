@@ -1,0 +1,10 @@
+#Pick a random character from a given String
+
+import string
+import random
+str="Murali"
+print("String is: "+str)
+length=len(str)
+pos=random.randrange(0,length)
+lst=list(str)
+print(lst[pos])
