@@ -1,0 +1,8 @@
+#Random Lottery Pick. Generate 100 random lottery tickets and pick two lucky tickets from it as a winner.
+
+import random
+lottery=list(range(1,101))
+winner1=random.randrange(0,len(lottery))
+winner2=random.randrange(0,len(lottery))
+print("Winner 1: ",winner1)
+print("Winner 2: ",winner2)
