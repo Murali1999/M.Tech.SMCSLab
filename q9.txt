@@ -1,0 +1,7 @@
+#Generate random String of length 5.
+
+import string
+import random
+n = int(input("Enter length of string to be generated: "))
+res = ''.join(random.sample(string.ascii_uppercase + string.ascii_lowercase, n))
+print("Random string generated is: "+res)
