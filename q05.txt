@@ -1,2 +1,9 @@
 #Python program to create two 2-D arrays and Plot them using matplotlib. (use Numpy and matplotlib libraries).
 
+import numpy as np 
+import matplotlib.pyplot as plt
+arr1=np.arange(1,10).reshape((3,3))
+arr2=np.arange(11,20).reshape((3,3))
+plt.plot(arr1)
+plt.plot(arr2)
+plt.show()
