@@ -1,0 +1,4 @@
+#Python program to print first 10 numbers using a for loop.
+
+for i in range(0,10):
+    print(i)
