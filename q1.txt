@@ -1,0 +1,20 @@
+#Python program to calculate sum and average of first n natural numbers.
+
+def sum(n):
+    s=0
+    for i in range(0,n+1):
+        s=s+i
+    return s
+
+def avg(n):
+    s=sum(n)
+    a=s/n
+    return a
+
+x=int(input("Enter number: "))
+print("Sum till {} is: ".format(x))
+s=sum(x)
+print(s)
+print("Average till {} is: ".format(x))
+a=avg(x)
+print(a)
