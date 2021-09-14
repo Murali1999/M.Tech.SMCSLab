@@ -1,0 +1,12 @@
+from scipy.stats import binom
+# setting the values of n and p
+n = 6
+p = 0.5
+r=3
+pd = [binom.pmf(r, n, p)]
+# printing the table
+print("r\tp(r)")
+print("{0}\t{1}".format(r,pd))
+import matplotlib.pyplot as plt
+plt.bar(r, pd)
+plt.show()

@@ -1,0 +1,33 @@
+from scipy.stats import binom
+import matplotlib.pyplot as plt
+# setting the values of n and p
+n = 12
+p = 0.2
+# defining the list of r values
+r1 = 2
+r2 = list(range(0,3))
+r3 = list(range(2,n+1))
+# list of pmf values
+pd1 = binom.pmf(r, n, p)
+pd2 = [binom.pmf(r, n, p) for r in r2 ]
+pd3 = [binom.pmf(r, n, p) for r in r3 ]
+# printing the table
+print("For exactly 2:")
+print("r\tp(r)")
+print("{0}\t{1}".format(r1,pd1))
+plt.bar(r1, pd1)
+plt.show()
+
+print("\nFor atmost 2:")
+print("r\tp(r)")
+for i in range(len(r2)):
+  print(str(r2[i]) + "\t" + str(pd2[i]))
+plt.bar(r2, pd2)
+plt.show()
+
+print("\nFor atleast 2:")
+print("r\tp(r)")
+for i in range(len(r3)):
+  print(str(r3[i]) + "\t" + str(pd3[i]))
+plt.bar(r3, pd3)
+plt.show()
